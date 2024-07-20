@@ -1,0 +1,110 @@
+.board {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('./assets/race.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.board-img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.board-heading {
+    height: 13%;
+}
+
+.board-items {
+    max-height: 60%;
+    overflow-y: auto; 
+    position: relative; 
+    padding: 0px 20px; 
+}
+
+.chip-container {
+    height: 10%;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; 
+}
+
+.new-entry {
+    opacity: 0;
+    transform: scale(1.1); 
+    animation: zoomOut 1s ease-in-out forwards; 
+} 
+
+@keyframes zoomOut {
+    0% {
+        opacity: 0;
+        transform: scale(0.8); 
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1); 
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
+@keyframes bulgeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(-20px); 
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1) translateY(0); 
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0); 
+    }
+}
+
+
+.board-items::-webkit-scrollbar {
+    display: none;
+}
+
+.recent-item { 
+    height: 77%;
+    width: 90%;
+    align-self: center;
+    margin: auto;
+}
+
+.recent-entry {
+    border-top: 1px solid #4b7b99;
+    backdrop-filter: blur(10px);
+    height: 15%;
+    font-size: large;
+    font-weight: 800;
+    color: white;
+    margin-top: 1%;
+
+    >h1 {
+        margin: 0%;
+    }
+}
+
+.board-header {
+    height:10%;
+    padding: 0px 20px
+
+}
+
+@media only screen and (max-width: 1280px) {
+    .board {
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .board {
+        height: 60vh;
+    }
+}

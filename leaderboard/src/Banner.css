@@ -1,0 +1,31 @@
+/* Banner.css */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.open-modal-button {
+    position: absolute;
+    top: 20px;
+    left: calc(30% + 50px);
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.open-modal-button:hover {
+    background-color: #0056b3;
+}
