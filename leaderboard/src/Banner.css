@@ -13,7 +13,7 @@
 .open-modal-button {
     position: absolute;
     top: 20px;
-    left: calc(30% + 50px);
+    left: calc(50% - 100px);
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
