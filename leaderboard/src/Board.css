@@ -22,7 +22,7 @@
     max-height: 60%;
     overflow-y: auto; 
     position: relative; 
-    padding: 0px 20px; 
+    padding-inline: 5%; 
 }
 
 .chip-container {
@@ -47,7 +47,7 @@
     }
     100% {
         opacity: 1;
-        transform: scale(1.05);
+        transform: scale(1);
     }
 }
 @keyframes bulgeIn {
@@ -72,7 +72,7 @@
 
 .recent-item { 
     height: 77%;
-    width: 90%;
+    padding-inline: 5%;
     align-self: center;
     margin: auto;
 }
@@ -93,7 +93,7 @@
 
 .board-header {
     height:10%;
-    padding: 0px 20px
+    padding-inline: 5%;
 
 }
 

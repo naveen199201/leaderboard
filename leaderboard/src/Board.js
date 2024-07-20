@@ -48,10 +48,23 @@ const Board = () => {
                         />
                     </div>
                 ))}
+                
+
             </div>
-            
-        </div>
-    );
+            <div className='recent-entry'>
+                    <div>
+                        {latestEntryIndex !== -1 && (
+                            <div className='recent-item'>
+                                RECENT ENTRY
+                                <Chip index={latestEntryIndex + 1} item={sortedList[latestEntryIndex]} />
+                            </div>
+                        )}
+                    </div>
+                    {/* RECENT ENTRY
+                    <Chip index={latestEntryIndex + 1} item={sortedList[latestEntryIndex]} /> */}
+                </div>
+                </div>
+            );
 };
 
-export default Board;
+            export default Board;

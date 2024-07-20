@@ -55,7 +55,7 @@ hr.right-line3 {
   padding-inline-start: 1%;
   text-shadow: 0 0 1px rgb(240, 236, 238), 0 0 2px rgb(240, 236, 238), 0 0 10px rgb(240, 236, 238);
   font-style: oblique;
-  font-size: 2vw;
+  font-size: 3.5vw;
   font-weight: bolder;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -102,7 +102,7 @@ hr.right-line3 {
   }
 
   .hoader-text {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 }
 
@@ -145,6 +145,6 @@ hr.right-line3 {
   }
 
   .hoader-text {
-    font-size: 3vw;
+    font-size: 5vw;
   }
 }

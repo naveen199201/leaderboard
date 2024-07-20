@@ -3,6 +3,7 @@ import './Chip.css';
 import { FaTrophy } from "react-icons/fa";
 import { BiSolidTimer } from "react-icons/bi";
 const Chip = ({ item, index, prize, isHeader }) => {
+    
     const pad = (num) => (num < 10 ? '0' + num : num);
 
     return (

@@ -1,6 +1,6 @@
 
 .App{
-margin-inline: 30%;
+margin-inline: 15%;
 }
 
 .board > div.recent-entry > div > div > div{
@@ -10,19 +10,9 @@ margin-inline: 30%;
   box-shadow: 0 0 13px 2px #48abe0;
   border: 1px solid #48abe0;
 }
-.banner {
-  height: 30vh;
-  width: 100%;
-}
-
-.banner-img {
-  height: 100%;
-  width: 100%;
-  object-fit: inherit;
-}
 
 .footer{
-  height:5vh;
+  height:3vh;
   background-color: black;
   color: white;
   text-align: center;
@@ -38,26 +28,26 @@ margin-inline: 30%;
   align-items: center;
   margin-bottom: 1%;
 }
-.hoader-left{
-  width: 24%; 
-}
-.hoader-text{
-  color:white;
-  width:50%;
-  padding-inline-start: 1%;
-  font-style: oblique;
-  font-size: 3vw;
-  font-weight: bolder;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-.hoader-right{
-  width: 24%;
+
+.scroll-text {
+  text-align: center;
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll 15s linear infinite;
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
 @media only screen and (max-width: 1280px) {
   .App{
-    margin-inline: 5%;
+    margin-inline: 20%;
     }
   }
   
